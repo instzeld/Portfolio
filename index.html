@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Geologica|DM Sans|Raleway' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/81c9db578f.js"></script>
+</head>
+
+<body>
+    
+    <div id="sideBar" class="sidebar">
+        <a class="closebutton" href="#" onclick="closeSide()">X</a>
+        <a href="#teamL" onclick="closeSide()">Team</a>
+        <a href="#about" onclick="closeSide()">About</a>
+        <a href="#workL" onclick="closeSide()">Work</a>
+        <a href="#pricingL" onclick="closeSide()">Pricing</a>
+        <a href="#contactL" onclick="closeSide()">Contact</a>
+    </div>
+    <div class="navbar" id="navL">
+        <div class="navIcon">
+            <a class="port" href="#mainA">Portfolio.</a>
+        </div>
+        <nav class="navitem">
+            <a href="#mainA" class="others focused" >Home</a>
+            <a href="#abt" class="others">About</a>
+            <a href="#portfolio1"class="others"  >Portfolio</a>
+        </nav>
+    </div>
+
+
+        <div  id="mainA">
+
+            <div class="main" id="mainL">
+                <div>
+                    <img src="pato.jpg" alt="pato" class="pato">
+                </div>
+                <div>
+                    <h2  style="font-size: 35px;">Hi! I'm </h2><br>
+                    <h1   style="font-size: 50px;">Duckworth</h1><br>
+                    <h3  style="font-size: 30px;">And I'm a <strong  style="font-size: 30px; " class="pmain0 focused">Junior Developer</strong></h3><br>
+                    <P >Also, Im a Mexican Junior Developer who is starting to create projects like videogames, webpages and another amazing stuff!</P><br>
+                    <div class="mainI">
+                    <a href="https://twitter.com/taqui56"><i class="fa-brands fa-twitter"></i> </a>
+                    </div>
+                    <button class="mainBtn">Learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="abt">
+            <div>
+                <img src="pato1.jpg" alt="pato1" class="pato1">
+            </div>
+            <div class="aboutA">
+                <p  style="font-size: 50px;">About <strong class="focused">Me</strong></p>
+                <p style="font-size: 35px;">Frontend Developer!</p>
+                <p style="margin-top: 30px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat sequi vero ipsum numquam repellendus facilis possimus cupiditate nostrum facere, repudiandae quis nemo accusamus, culpa eius obcaecati! At quam adipisci sequi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum earum, necessitatibus nulla ad excepturi quasi a numquam exercitationem accusamus veritatis fugit ipsam, amet rem eveniet explicabo perferendis sit aliquid. Error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consequuntur natus facilis facere necessitatibus quas quisquam cupiditate, saepe provident inventore illum possimus ut tenetur magnam praesentium dolorem perferendis nihil blanditiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellendus ipsum dignissimos sint cum quis beatae incidunt quibusdam facere sunt minus quam obcaecati dicta illum labore et architecto, ipsa adipisci.</p>
+                <button class="aboutBtn" style="margin-top: 30px;">Read More</button>
+            </div>
+        </div>
+        <div id="portfolio">
+            <p id="portfolio1" style="font-size: 50px;margin-bottom: 10px;">My <strong class="focused">Projects</strong></p>
+            <div class="webpages" >
+                <p style="font-size: 30px;">Webpages</p>
+                <img src="work.png" class="work" alt="work">
+            </div>
+            <div class="games">
+                <p style="font-size: 30px;margin-bottom: 10px;">Games</p>
+                <img src="work1.png" class="work1" alt="work1">
+            </div>
+
+        </div>
+
+
+</body>
+<script src="main.js"></script>
+</html>
