@@ -169,6 +169,9 @@ body{
 .navI{
     display: none;
 }
+.texto{
+    font-size: 50px;
+}
 @keyframes neon-glow {
     from {
         box-shadow: 0 0 0.5px rgb(100, 185, 224), 0 0 1px rgb(100, 185, 224), 0 0 1.5px rgb(100, 185, 224), 0 0 2px rgb(100, 185, 224), 0 0 2.5px rgb(100, 185, 224), 0 0 3.5px rgb(100, 185, 224), 0 0 4px rgb(100, 185, 224), 0 0 5px rgb(100, 185, 224), 0 0 7px rgb(100, 185, 224);
@@ -178,7 +181,8 @@ body{
     }
   }
 
-  @media (max-width: 1100px){
+
+@media (min-width: 201px) and (max-width: 1024px){
     .main{
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -215,8 +219,9 @@ body{
         width: 400px;
         transition: 0.5s;
     }
+
     #portfolio{
-        padding: 80px 90px 10px 60px;
+        padding: 80px 0px 10px 0px;
     }
     #portfolio1{
         margin-left: 50px;
@@ -229,11 +234,45 @@ body{
     }
 }
 
-@media (min-width: 500px){
+@media (max-width: 200px){
+
+    #portfolio1{
+        margin-left: 0;
+    }
     .webpages, .games{
-        margin-left: 10px;
+        margin-left: 0;
+
     }
     .webpages p, .games p{
-        margin-left: 20px;
+        margin-left: 0;
+    }
+    .webpages img, .games img{
+        width: 200px;
+    }
+    .pato{
+        width: 150px;
+    }
+    .pato1{
+        width: 150px;
+        margin-bottom: 25px;
+    }
+    .aboutB{
+        margin-left: 50px;
+    }
+    .about{
+        padding-left: 10px;
+        padding-right: 50px;
+    }
+    .aboutP{
+        font-size: 12px;
+    }
+    .texto{
+        font-size: 30px;
+
+    }
+    .main{
+        padding-right: 10px;
+        padding-left: 10px;
+        justify-content: space-around;
     }
 }
