@@ -182,7 +182,7 @@ body{
   }
 
 
-@media (min-width: 201px) and (max-width: 1024px){
+@media (min-width: 501px) and (max-width: 1200px){
     .main{
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -196,11 +196,11 @@ body{
     }
     .pato1{
         width: 300px;
-        margin-bottom: 50px;
+        margin-bottom: 5px;
     }
     .about{
         flex-direction: column;
-
+        justify-content: center;
         text-align: center;
         padding: 80px 90px 10px 60px;
     }
@@ -234,45 +234,57 @@ body{
     }
 }
 
-@media (max-width: 200px){
-
-    #portfolio1{
-        margin-left: 0;
-    }
-    .webpages, .games{
-        margin-left: 0;
-
-    }
-    .webpages p, .games p{
-        margin-left: 0;
-    }
-    .webpages img, .games img{
-        width: 200px;
+@media (max-width: 500px){
+    .main{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        padding-top: 0;
+        text-align: center;
+        padding: 20px 0px 10px 0px;
     }
     .pato{
         width: 150px;
     }
     .pato1{
         width: 150px;
-        margin-bottom: 25px;
-    }
-    .aboutB{
-        margin-left: 50px;
     }
     .about{
-        padding-left: 10px;
-        padding-right: 50px;
+        flex-direction: column;
+
+        text-align: center;
+        padding: 80px 5px 10px 5px;
     }
-    .aboutP{
-        font-size: 12px;
+    .aboutA{
+        margin-left: 0;
+    }
+    .navitem{
+        display:none;
+    }
+    .navbar{
+        padding: 10px 18px 10px 18px;
+    }
+    .navI{
+        display: block;
+        
+    }
+    .work, .work1{
+        width: 200px;
+        transition: 0.5s;
     }
     .texto{
         font-size: 30px;
-
     }
-    .main{
-        padding-right: 10px;
-        padding-left: 10px;
-        justify-content: space-around;
+    #portfolio{
+        padding: 80px 0px 10px 0px;
     }
+    #portfolio1{
+        margin-left: 0px;
+    }
+    .webpages, .games{
+        margin-left: 0px;
+    }
+    .aboutB{
+        margin-left: 0px;
+    }
+    
 }
