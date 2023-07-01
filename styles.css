@@ -45,6 +45,10 @@ body{
 }
 .work, .work1{
     width: 500px;
+    transition: 0.5s;
+}
+.work:hover, .work1:hover{
+    opacity: 50%;
 }
 .aboutA{
     margin-left: 50px;
@@ -162,7 +166,9 @@ body{
     top: 5px;
     font-size: 36px;
 }
-
+.navI{
+    display: none;
+}
 @keyframes neon-glow {
     from {
         box-shadow: 0 0 0.5px rgb(100, 185, 224), 0 0 1px rgb(100, 185, 224), 0 0 1.5px rgb(100, 185, 224), 0 0 2px rgb(100, 185, 224), 0 0 2.5px rgb(100, 185, 224), 0 0 3.5px rgb(100, 185, 224), 0 0 4px rgb(100, 185, 224), 0 0 5px rgb(100, 185, 224), 0 0 7px rgb(100, 185, 224);
@@ -171,5 +177,54 @@ body{
       box-shadow: 0 0 4px rgb(100, 185, 224), 0 0 6px rgb(100, 185, 224), 0 0 8px rgb(100, 185, 224), 0 0 10px rgb(100, 185, 224), 0 0 14px rgb(100, 185, 224), 0 0 16px rgb(100, 185, 224), 0 0 20px rgb(100, 185, 224), 0 0 30px rgb(100, 185, 224), 0 0 40px rgb(100, 185, 224);
     }
   }
-  
-  
+
+  @media (max-width: 1500px){
+    .main{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-top: 0;
+        
+        text-align: center;
+    }
+    .pato{
+        width: 300px;
+        margin-bottom: 100px;
+    }
+    .pato1{
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    .about{
+        flex-direction: column;
+
+        text-align: center;
+        padding: 80px 90px 10px 60px;
+    }
+
+    .navitem{
+        display:none;
+    }
+    .navbar{
+        padding: 10px 18px 10px 18px;
+    }
+    .navI{
+        display: block;
+        
+    }
+    .work, .work1{
+        width: 400px;
+        transition: 0.5s;
+    }
+    #portfolio{
+        padding: 80px 90px 10px 60px;
+    }
+    #portfolio1{
+        margin-left: 50px;
+    }
+    .webpages, .games{
+        margin-left: 50px;
+    }
+    .aboutB{
+        margin-left: 50px;
+    }
+}
